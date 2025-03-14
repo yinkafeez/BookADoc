@@ -1,0 +1,38 @@
+.button {
+  background-color: #101828;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+.more-info-button {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 40px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 5px;
+  cursor: pointer;
+}
+.book-again-button {
+  background-color: #101828;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 5px;
+  cursor: pointer;
+}

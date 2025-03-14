@@ -1,0 +1,17 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 400px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #eaecf0;
+  /* margin-bottom: 5rem; */
+  justify-content: center;
+  align-items: center;
+}
+.map-img {
+  width: 360px;
+  height: 180px;
+}

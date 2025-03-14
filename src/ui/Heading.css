@@ -1,0 +1,13 @@
+.heading {
+  color: #101828;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+}

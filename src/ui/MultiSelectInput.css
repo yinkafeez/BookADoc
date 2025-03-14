@@ -1,0 +1,57 @@
+.multi-select-input-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  width: 350px;
+  background-color: white;
+  cursor: text;
+}
+
+.multi-select-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.multi-select-tag {
+  display: flex;
+  align-items: center;
+  background: #f3f0ff;
+  border: 1px solid #c5b3ff;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.multi-select-remove-button {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.multi-select-remove-button:hover {
+  color: black;
+}
+
+.multi-select-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.multi-select-dropdown-icon {
+  color: #475467;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 14px;
+}

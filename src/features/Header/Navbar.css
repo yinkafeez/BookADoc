@@ -1,0 +1,8 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}

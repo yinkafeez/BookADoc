@@ -1,0 +1,13 @@
+.app-layout {
+  background-color: #f9fafb;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.app-layout__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 0;
+  column-gap: 20px;
+}
