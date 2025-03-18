@@ -33,6 +33,8 @@
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
   text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 /* Day Column */
@@ -108,4 +110,18 @@
 .no-slot {
   color: gray;
   font-size: 12px;
+}
+
+@media (max-width: 576px) {
+  .calendar-container {
+    /* width: 100%; */
+    padding: 15px 5px;
+  }
+  .calendar-grid {
+    /* width: fit-content; */
+    overflow-x: auto;
+  }
+  .nav-button {
+    padding: 0px;
+  }
 }

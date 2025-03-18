@@ -36,3 +36,10 @@
   column-gap: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 576px) {
+  .more-info-button,
+  .book-again-button {
+    font-size: 10px;
+  }
+}

@@ -6,3 +6,17 @@
   align-items: center;
   padding: 1rem 2rem;
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    row-gap: 10px;
+    background: linear-gradient(to right, #ffecf4, #cdc9ff);
+    height: 100px;
+    position: absolute;
+    top: 4rem;
+    right: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+}

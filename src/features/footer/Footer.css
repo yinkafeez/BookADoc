@@ -1,4 +1,5 @@
 .footer {
+  /* width: 100vw; */
   height: 315px;
   background-color: #101828;
   color: #fff;
@@ -61,4 +62,30 @@
   word-wrap: break-word;
   line-height: 1.5;
   color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    width: 90vw;
+    height: fit-content;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+  }
+  .footer-column {
+    row-gap: 12px;
+  }
+  .footer-column h3 {
+    font-size: 18px;
+  }
+  .footer-list {
+    row-gap: 10px;
+  }
 }

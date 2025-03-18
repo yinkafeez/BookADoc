@@ -38,10 +38,10 @@ function SearchInput() {
         onChange={(e) => onChange({ ...value, category: e.target.value })}
         className="search-input"
       >
-        <option>Agile Health Insurance</option>
-        <option>Fagule Health Insurance</option>
-        <option>Gasun Health Insurance</option>
-        <option>Mason Health Insurance</option>
+        <option className="option">Agile Health Insurance</option>
+        <option className="option">Fagule Health Insurance</option>
+        <option className="option"> Gasun Health Insurance</option>
+        <option className="option">Mason Health Insurance</option>
         {/* Add more months as needed */}
       </select>
 

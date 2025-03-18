@@ -29,7 +29,6 @@ export default function DateSelector() {
           </option>
         ))}
       </select>
-      {selectedDate && <p>Selected Date: {selectedDate}</p>}
     </>
   );
 }

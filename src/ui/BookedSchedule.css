@@ -1,13 +1,13 @@
 /* Container */
 .calendar-container {
   width: 100%;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: auto;
   padding: 20px;
   background: #fff;
   color: #101828;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px #d36b6b1a;
 }
 
 /* Header Navigation */
@@ -82,4 +82,18 @@
 .day-number {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .calendar-container {
+    width: 100%;
+    padding: 5px;
+  }
+  .calendar-grid {
+    max-width: 235px;
+    overflow-x: auto;
+  }
+  .nav-button {
+    padding: 0px;
+  }
 }

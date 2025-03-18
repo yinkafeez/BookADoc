@@ -7,3 +7,9 @@ body {
   font-family: arial;
   background-color: #fff;
 }
+
+@media (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}

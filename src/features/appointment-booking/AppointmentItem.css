@@ -5,12 +5,23 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 800px;
-  /* height: 236px; */
 }
+@media (max-width: 576px) {
+  .appointment-item {
+    width: 80%;
+  }
+}
+
 .notification {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+@media (max-width: 576px) {
+  .notification {
+    font-size: 8px;
+    font-weight: 200;
+  }
 }
 .booked {
   display: flex;
@@ -114,7 +125,6 @@
   margin-right: 5px;
 }
 .actions {
-  top: 4px;
   display: flex;
   justify-content: space-between;
   column-gap: 10px;
@@ -125,11 +135,18 @@
 .info-icon {
   color: #98a2b3;
 }
-.bookAgain-button {
-  padding: 8px 16px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+@media (max-width: 576px) {
+  .doctor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: static;
+    padding-bottom: 10px;
+  }
+  .actions {
+    position: static;
+  }
+  .doctor-image {
+    width: 100%;
+  }
 }

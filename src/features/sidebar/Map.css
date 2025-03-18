@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  width: 400px;
+  width: 400;
   height: 280px;
   background-color: #fff;
   border-radius: 20px;
@@ -14,4 +14,12 @@
 .map-img {
   width: 360px;
   height: 180px;
+}
+@media (max-width: 320px) {
+  .map {
+    width: 100%;
+  }
+  .map-img {
+    width: 90%;
+  }
 }

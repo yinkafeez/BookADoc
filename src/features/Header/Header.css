@@ -8,3 +8,24 @@
   padding: 1.4px 2rem;
   border-radius: 20px;
 }
+
+.btn {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header {
+    width: 100vw;
+    height: max-content;
+    column-gap: 10px;
+    padding: 1rem 15px;
+    margin-left: 0;
+    position: relative;
+    justify-content: flex-end;
+  }
+  .btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+}
