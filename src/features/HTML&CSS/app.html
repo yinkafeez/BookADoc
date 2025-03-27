@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+    <title>BookADoc</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <!-- HEADER -->
+      <header class="header">
+        <!-- search input -->
+        <div class="search-container">
+          <input
+            type="text"
+            id="diseaseName"
+            placeholder="Migraine"
+            class="search-input"
+          />
+
+          <input
+            type="text"
+            id="id"
+            placeholder="456789"
+            class="search-input"
+          />
+
+          <select class="search-input">
+            <option class="option">Agile Health Insurance</option>
+            <option class="option">Fagule Health Insurance</option>
+            <option class="option">Gasun Health Insurance</option>
+            <option class="option">Mason Health Insurance</option>
+          </select>
+
+          <button class="search-button">
+            <i class="fas fa-search search-icon"></i>
+          </button>
+        </div>
+
+        <div>
+          <button class="hamburger">☰</button>
+        </div>
+
+        <!-- nav bar -->
+        <nav class="navbar">
+          <div>Contact Us</div>
+          <button class="button">Sign In</button>
+        </nav>
+      </header>
+
+      <!-- APP LAYOUT -->
+      <div class="app-layout">
+        <!-- heading -->
+        <div class="heading">
+          <h1>Migraine Illness with Agile Health Insurance</h1>
+
+          <p>100+ Results</p>
+        </div>
+
+        <!-- content -->
+        <div class="app-layout__content">
+          <!-- appointment layout -->
+          <div class="appointment-layout">
+            <!-- appointment list  1-->
+            <div class="appointment-list">
+              <!-- book again -->
+              <div class="appointment-item">
+                <div class="notification">
+                  <p class="not-booked">
+                    <span>
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    Lorem ipsum dolor sit amet cosecteuer. View details
+                  </p>
+                </div>
+                <div class="doctor-info">
+                  <div class="image-container">
+                    <img
+                      src="../../img/doc1.jpg"
+                      alt="Doctor"
+                      class="doctor-image"
+                    />
+                    <div class="favorite-icon-div">
+                      <i class="fas fa-heart favorite-icon"></i>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h2>Katherine Carroll, DO</h2>
+                    <p>Primary Care Doctor</p>
+                    <p>
+                      <span class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      52087 Toney Neck Suite 296
+                    </p>
+                    <div class="rating-views">
+                      <span class="star-rating">
+                        <span class="star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        5.00
+                      </span>
+                      <span class="views">(99 reviews)</span>
+                    </div>
+                    <div class="insurance">
+                      <span>
+                        <img src="../../img/insurance.png" alt="insurance" />
+                      </span>
+                      <p>Dyson, and 2+ more insurance accepted</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="more-info-button">
+                      <span color="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                      </span>
+                      <span>More Info</span>
+                    </button>
+                    <button
+                      class="book-again-button"
+                      onClick="{handleBookAgain}"
+                    >
+                      <span>
+                        <i class="fas fa-calendar-check"></i>
+                      </span>
+                      <span>Book Again</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- item 1 close -->
+
+              <!-- appointment item  2-->
+              <!-- booked -->
+              <div class="appointment-item">
+                <div class="notification">
+                  <p class="booked">
+                    <span>
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    You booked this provider in the past
+                  </p>
+                </div>
+                <div class="doctor-info">
+                  <div class="image-container">
+                    <img
+                      src="../../img/doc2.jpg"
+                      alt="Doctor"
+                      class="doctor-image"
+                    />
+                    <div class="favorite-icon-div">
+                      <i class="fas fa-heart favorite-icon"></i>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h2>Steven Weiner, MD</h2>
+                    <p>Primary Care Doctor</p>
+                    <p>
+                      <span class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      52087 Toney Neck Suite 296
+                    </p>
+                    <div class="rating-views">
+                      <span class="star-rating">
+                        <span class="star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        5.00
+                      </span>
+                      <span class="views">(100 reviews)</span>
+                    </div>
+                    <div class="insurance">
+                      <span>
+                        <img src="../../img/insurance.png" alt="insurance" />
+                      </span>
+                      <p>Dyson, and 2+ more insurance accepted</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="more-info-button">
+                      <span color="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                      </span>
+                      <span>More Info</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- booked schedule -->
+                <div class="calendar-container">
+                  <div class="calendar-header">
+                    <button class="nav-button">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 256 512"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h2>March 2025</h2>
+                    <button class="nav-button">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 256 512"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="calendar-grid">
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">MON</span>
+                        <span class="day-number">24</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button selected">
+                        <span class="day-name">TUE</span>
+                        <span class="day-number">25</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">WED</span>
+                        <span class="day-number">26</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">THU</span>
+                        <span class="day-number">27</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">FRI</span>
+                        <span class="day-number">28</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">SAT</span>
+                        <span class="day-number">29</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">SUN</span>
+                        <span class="day-number">30</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- schedule  close -->
+              </div>
+              <!-- item 2 close -->
+
+              <!-- appointment item  3-->
+              <!-- booking -->
+              <div class="appointment-item">
+                <div class="doctor-info">
+                  <div class="image-container">
+                    <img
+                      src="../../img/doc3.jpg"
+                      alt="Doctor"
+                      class="doctor-image"
+                    />
+                    <div class="favorite-icon-div">
+                      <i class="fas fa-heart favorite-icon"></i>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h2>Dr. Anesa Dahly</h2>
+                    <p>Primary Care Doctor</p>
+                    <p>
+                      <span class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      52087 Toney Neck Suite 296
+                    </p>
+                    <div class="rating-views">
+                      <span class="star-rating">
+                        <span class="star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        5.00
+                      </span>
+                      <span class="views">(100 reviews)</span>
+                    </div>
+                    <div class="insurance">
+                      <span>
+                        <img src="../../img/insurance.png" alt="insurance" />
+                      </span>
+                      <p>Dyson, and 2+ more insurance accepted</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="more-info-button">
+                      <span color="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                      </span>
+                      <span>More Info</span>
+                    </button>
+                    <button
+                      class="book-again-button"
+                      onClick="{handleBookAgain}"
+                    >
+                      <span>
+                        <i class="fas fa-calendar-check"></i>
+                      </span>
+                      <span>Book Appointment</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Schedule date -->
+                <div class="schedule">
+                  <div class="calendar-container">
+                    <div class="calendar-header">
+                      <button class="nav-button">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 512"
+                          height="24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <h2>March 2025</h2>
+                      <button class="nav-button">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 512"
+                          height="24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="calendar-grid">
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">MON</span>
+                          <span class="day-number">24</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="time-slot">8:00 AM</div>
+                        </div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button selected">
+                          <span class="day-name">TUE</span>
+                          <span class="day-number">25</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="time-slot">8:00 AM</div>
+                          <div class="time-slot">8:20 AM</div>
+                          <div class="time-slot">9:00 AM</div>
+                        </div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">WED</span>
+                          <span class="day-number">26</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="time-slot">8:00 AM</div>
+                          <div class="time-slot">8:20 AM</div>
+                          <div class="time-slot">9:00 AM</div>
+                        </div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">THU</span>
+                          <span class="day-number">27</span>
+                        </button>
+                        <div class="time-slots"></div>
+                        <div class="time-slot disabled">—</div>
+                        <div class="time-slot">8:20 AM</div>
+                        <div class="time-slot">9:00 AM</div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">FRI</span>
+                          <span class="day-number">28</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="time-slot">8:00 AM</div>
+                          <div class="time-slot disabled">—</div>
+                          <div class="time-slot">9:00 AM</div>
+                        </div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">SAT</span>
+                          <span class="day-number">29</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="no-slot">—</div>
+                        </div>
+                      </div>
+                      <div class="day-column">
+                        <button class="date-button">
+                          <span class="day-name">SUN</span>
+                          <span class="day-number">30</span>
+                        </button>
+                        <div class="time-slots">
+                          <div class="no-slot">—</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 close  -->
+
+              <!-- appointment item  4-->
+              <!-- booked -->
+              <div class="appointment-item">
+                <div class="notification">
+                  <p class="booked">
+                    <span>
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    You booked this provider in the past
+                  </p>
+                </div>
+                <div class="doctor-info">
+                  <div class="image-container">
+                    <img
+                      src="../../img/doc4.jpg"
+                      alt="Doctor"
+                      class="doctor-image"
+                    />
+                    <div class="favorite-icon-div">
+                      <i class="fas fa-heart favorite-icon"></i>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h2>Olivia Rhye</h2>
+                    <p>Primary Care Doctor</p>
+                    <p>
+                      <span class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      52087 Toney Neck Suite 296
+                    </p>
+                    <div class="rating-views">
+                      <span class="star-rating">
+                        <span class="star">
+                          <i class="fas fa-star"></i>
+                        </span>
+                        5.00
+                      </span>
+                      <span class="views">(99 reviews)</span>
+                    </div>
+                    <div class="insurance">
+                      <span>
+                        <img src="../../img/insurance.png" alt="insurance" />
+                      </span>
+                      <p>Dyson, and 2+ more insurance accepted</p>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="more-info-button">
+                      <span color="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                      </span>
+                      <span>More Info</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- booked schedule -->
+                <div class="calendar-container">
+                  <div class="calendar-header">
+                    <button class="nav-button">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 256 512"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <h2>March 2025</h2>
+                    <button class="nav-button">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 256 512"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="calendar-grid">
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">MON</span>
+                        <span class="day-number">24</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button selected">
+                        <span class="day-name">TUE</span>
+                        <span class="day-number">25</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">WED</span>
+                        <span class="day-number">26</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">THU</span>
+                        <span class="day-number">27</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">FRI</span>
+                        <span class="day-number">28</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">SAT</span>
+                        <span class="day-number">29</span>
+                      </button>
+                    </div>
+                    <div class="day-column">
+                      <button class="date-button">
+                        <span class="day-name">SUN</span>
+                        <span class="day-number">30</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- calender close  -->
+              </div>
+              <!-- item 4 close  -->
+            </div>
+            <!-- appointment list close -->
+          </div>
+          <!-- appointment layoout close -->
+
+          <!-- right side  layout -->
+          <div class="sidebar-layout">
+            <!-- map -->
+            <div class="map">
+              <img src="../../img/map.png" alt="Map" class="map-img" />
+              <button class="more-info-button">
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span>View in a map</span>
+              </button>
+            </div>
+            <!-- map close  -->
+
+            <!-- Form -->
+            <form class="form">
+              <div class="filter">
+                <p class="filter-name">All Filter</p>
+                <p class="filter-action">Clear All Filter</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Select Month</label>
+                <select id="date-select" class="form-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="January 2025">January 2025</option>
+                  <option value="February 2025">February 2025</option>
+                  <option value="March 2025">March 2025</option>
+                  <option value="April 2025">April 2025</option>
+                  <option value="May 2025">May 2025</option>
+                  <option value="June 2025">June 2025</option>
+                  <option value="July 2025">July 2025</option>
+                  <option value="August 2025">August 2025</option>
+                  <option value="September 2025">September 2025</option>
+                  <option value="October 2025">October 2025</option>
+                  <option value="November 2025">November 2025</option>
+                  <option value="December 2025">December 2025</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Visit Type</label>
+                <select class="form-select">
+                  <option>In Person</option>
+                  <option>Virtual</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Preferred Time</label>
+                <div class="form-checkbox-group">
+                  <div>
+                    <input type="checkbox" class="form-checkbox" /> Early
+                    Morning (Before 9am)
+                  </div>
+                  <div>
+                    <input type="checkbox" class="form-checkbox" /> Morning (9am
+                    - noon)
+                  </div>
+                  <div>
+                    <input type="checkbox" class="form-checkbox" /> Afternoon
+                    (Noon - 4pm)
+                  </div>
+                  <div>
+                    <input type="checkbox" class="form-checkbox" /> Evening
+                    (After 4pm)
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Provider Gender</label>
+                <div class="form-radio-group">
+                  <div>
+                    <input type="radio" name="gender" class="form-radio" /> Male
+                  </div>
+                  <div>
+                    <input type="radio" name="gender" class="form-radio" />
+                    Female
+                  </div>
+                  <div>
+                    <input type="radio" name="gender" class="form-radio" />
+                    Other
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Visit Reason</label>
+                <!-- multiselect    -->
+                <div class="multi-select-input-container">
+                  <!--  Tags  -->
+                  <main class="multi-select-tags">
+                    <div class="multi-select-tag">
+                      Anxiety
+                      <button class="multi-select-remove-button">
+                        <i class="fas fa-times multi-select-remove-icon"></i>
+                      </button>
+                    </div>
+                  </main>
+
+                  <!-- {/* Input Field */} -->
+                  <input
+                    type="text"
+                    class="multi-select-input"
+                    placeholder="Add a tag..."
+                  />
+
+                  <!-- {/* Dropdown Icon */} -->
+                  <span class="multi-select-dropdown-icon">▼</span>
+                </div>
+                <!-- multiselect close   -->
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Speciality</label>
+                <!-- multiselect    -->
+                <div class="multi-select-input-container">
+                  <!--  Tags  -->
+                  <div class="multi-select-tags">
+                    <div key="{index}" class="multi-select-tag">
+                      Addicted
+                      <button class="multi-select-remove-button">
+                        <i class="fas fa-times multi-select-remove-icon"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- {/* Input Field */} -->
+                  <input
+                    type="text"
+                    class="multi-select-input"
+                    placeholder="Add a tag..."
+                  />
+
+                  <!-- {/* Dropdown Icon */} -->
+                  <span class="multi-select-dropdown-icon">▼</span>
+                </div>
+                <!-- multiselect close   -->
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Rating/Review</label>
+                <div class="form-rating">
+                  <button type="button" class="rating-button rating-dec">
+                    -
+                  </button>
+                  <input
+                    type="range"
+                    class="form-range"
+                    min="1"
+                    max="10"
+                    value="1"
+                  />
+
+                  <button type="button" class="rating-button rating-inc">
+                    +
+                  </button>
+                  <button class="rating-value">0</button>
+                </div>
+                <!-- form rating close -->
+              </div>
+
+              <div className="form-group">
+                <label className="form-label">Language Spoken</label>
+                <!-- multiselect    -->
+                <div class="multi-select-input-container">
+                  <!--  Tags  -->
+                  <div class="multi-select-tags">
+                    <div key="{index}" class="multi-select-tag">
+                      English
+                      <button class="multi-select-remove-button">
+                        <i class="fas fa-times multi-select-remove-icon"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- {/* Input Field */} -->
+                  <input
+                    type="text"
+                    class="multi-select-input"
+                    placeholder="Add a tag..."
+                  />
+
+                  <!-- {/* Dropdown Icon */} -->
+                  <span class="multi-select-dropdown-icon">▼</span>
+                </div>
+                <!-- multiselect close   -->
+              </div>
+            </form>
+            <!--   form close   -->
+          </div>
+          <!-- right side layout close -->
+        </div>
+        <!-- app layout content close -->
+      </div>
+      <!-- app layout close  -->
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <div class="footer-logo-container">
+              <img src="../../img/logo.png" alt="Logo" class="footer-logo" />
+              <h2 class="footer-title">BookADoc</h2>
+            </div>
+            <p class="footer-description">
+              BookADoc is a patient facing web / mobile application where
+              patients can search and discover providers by illness, specialist
+              or name of the provider.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Service for Patient</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">Doctor Search</li>
+              <li class="footer-list-item">Appointment Booking</li>
+              <li class="footer-list-item">Patient Reviews</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Service for Doctor</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">Profile Listing</li>
+              <li class="footer-list-item">Appointment Management</li>
+              <li class="footer-list-item">Patient Feedback</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item">1-888-123-4567</li>
+              <li class="footer-list-item">help@bookadoc.com</li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-large-description">
+          BookADoc is a patient facing web / mobile application where patients
+          can search and discover providers by illness, specialist or name of
+          the provider. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec sed neque vitae nisl condimentum feugiat vitae et libero.
+          Phasellus volutpat sapien aliquam mauris volutpat imperdiet Aenean eu
+          elementum sem. Nullam convallis fermentum mauris, id luctus neque
+          porta pulvinar.
+        </p>
+      </footer>
+      <!-- FOOTER CLOSE -->
+    </div>
+  </body>
+
+  <script src="../JS/main.js"></script>
+</html>
